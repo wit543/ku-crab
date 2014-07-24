@@ -9,17 +9,18 @@ import java.util.Random; // another random number generator
  */
 public class CrabWorld extends World
 {
+    
     /**
      * Create the crab world (the beach). Our world has a size 
      * of 560x460 cells, where every cell is just 1 pixel.
      */
     public CrabWorld() 
     {
-        super(800, 600, 1);
+        super(1366, 768, 1);
         setBackground("sand.jpg");
 
         //addObject(new Lv1(), 400, 300 );
-        addObject(new Crab(), -150,  -150);
+        addObject(new Crab(), 50,  50);
         init();
     }
 
@@ -35,11 +36,19 @@ public class CrabWorld extends World
     }
 
     public void init(){
-
-        addObject( new   Block_static(100,200), 200, 300 );
-        addObject( new   Block_static(200,200), 300, 400 );
+        
+                                   /*  w   h   x   y*/
+        addObject( new   Timer(), 1000, 700 );                       
+        addObject( new   Block_static(200,50), 100, 100 );
+        addObject( new   Block_static(50,350), 300, 0 );
+        addObject( new   Block_static(250,50), 200, 200 );
+        addObject( new   Block_static(50,490), 100, 470 );
+        addObject( new   Block_static(50,500), 200, 550 );
+        addObject( new   Block_static(200,50), 325, 325 );
+        addObject( new   Block_static(50,250), 400, 175 );
+        
+        /*addObject( new   Block_static(200,200), 300, 400 );
         addObject( new   Block_dynamic(100,100, 300, 400,50,1,1), 300, 400 );
-
-          
+            */
     }
 }
