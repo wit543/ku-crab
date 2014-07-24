@@ -12,8 +12,8 @@ public class Block_static extends Block
      * Act - do whatever the Block_static wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Block_static(int width,int heigth){
-        super(width,heigth);
+    public Block_static(int width,int heigth,int angle){
+        super(width,heigth,angle);
     }
     public void act() 
     {

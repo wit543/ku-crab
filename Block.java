@@ -18,15 +18,17 @@ public class Block extends Environment
     private int start =0;
     private int initX=0;
     private int initY=0;
-    private int distance;
+    private int toX;
+    private int toY;
     private int moveSpeed =1;
-    
-    public Block(int width,int heigth,int initx,int inity,int d,int s){
+    private int angle =0;
+    public Block(int width,int heigth,int initx,int inity,int toX,int toY,int moveSpeed,int angle){
         this.initX = initx;
         this.initY=inity;
-        this.distance=d;
-        this.moveSpeed=s;
-        
+        this.toX = toX;
+        this.toY = toY;
+        this.moveSpeed=moveSpeed;
+        this.angle=angle;
         GreenfootImage image = new GreenfootImage(width,heigth);
         image.setTransparency(200);
         image.setColor(Color.BLACK);
@@ -35,14 +37,15 @@ public class Block extends Environment
 
     }
 
-    public Block(int width,int heigth){
-
+    public Block(int width,int heigth,int angle){
+        this.angle=angle;
         GreenfootImage image = new GreenfootImage(width,heigth);
         image.setTransparency(200);
         image.setColor(Color.BLACK);
         image.fillRect(0,0,width,heigth);
+        turn(angle);
         setImage(image);
-
+        
     }
 
     public void init(){
@@ -76,11 +79,11 @@ public class Block extends Environment
     public void moveX(){
         x=getX();
         y=getY();
-        if(x<=initX-distance)
+        if(x<=initX-toX)
         {
             start=1;
         }
-        else if(x>=initX+distance)
+        else if(x>=initX+toX)
         {
             start=0;
         }
@@ -96,11 +99,11 @@ public class Block extends Environment
     } public void moveY(){
         x=getX();
         y=getY();
-        if(y<=initY-distance)
+        if(y<=initY-toY)
         {
             start=1;
         }
-        else if(y>=initY+distance)
+        else if(y>=initY+toY)
         {
             start=0;
         }
