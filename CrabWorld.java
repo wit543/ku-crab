@@ -16,7 +16,7 @@ public class CrabWorld extends World
      */
     public CrabWorld() 
     {
-        super(1366, 768, 1);
+        super(800, 600, 1);
         setBackground("sand.jpg");
 
         //addObject(new Lv1(), 400, 300 );
@@ -38,7 +38,7 @@ public class CrabWorld extends World
     public void init(){
         
                                    /*  w   h   x   y*/
-        addObject( new   Timer(), 1000, 700 );                       
+        addObject( new   Timer(), 780, 580 );                       
         addObject( new   Block_static(200,50), 100, 100 );
         addObject( new   Block_static(50,350), 300, 0 );
         addObject( new   Block_static(250,50), 200, 200 );

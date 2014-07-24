@@ -53,11 +53,11 @@ public class Crab extends Animal
 
             }
             else if(Greenfoot.isKeyDown("a")){
-                turn(-15);
+                turn(-10);
 
             }
             else if(Greenfoot.isKeyDown("d")){
-                turn(15);
+                turn(10);
 
             } 
             animation();
