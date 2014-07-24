@@ -20,11 +20,13 @@ public class Block extends Environment
     private int initY=0;
     private int distance;
     private int moveSpeed =1;
+    
     public Block(int width,int heigth,int initx,int inity,int d,int s){
         this.initX = initx;
         this.initY=inity;
         this.distance=d;
         this.moveSpeed=s;
+        
         GreenfootImage image = new GreenfootImage(width,heigth);
         image.setTransparency(200);
         image.setColor(Color.BLACK);
