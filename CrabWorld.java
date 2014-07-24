@@ -38,7 +38,7 @@ public class CrabWorld extends World
 
         addObject( new   Block_static(100,200), 200, 300 );
         addObject( new   Block_static(200,200), 300, 400 );
-        addObject( new   Block_dynamic(100,100, 300, 400,50), 300, 400 );
+        addObject( new   Block_dynamic(100,100, 300, 400,50,1), 300, 400 );
 
           
     }

@@ -19,10 +19,12 @@ public class Block extends Environment
     private int initX=0;
     private int initY=0;
     private int distance;
-    public Block(int width,int heigth,int initx,int inity,int d){
+    private int moveSpeed =1;
+    public Block(int width,int heigth,int initx,int inity,int d,int s){
         this.initX = initx;
         this.initY=inity;
         this.distance=d;
+        this.moveSpeed=s;
         GreenfootImage image = new GreenfootImage(width,heigth);
         image.setTransparency(200);
         image.setColor(Color.BLACK);
@@ -81,11 +83,31 @@ public class Block extends Environment
             start=0;
         }
         if(start==0){
-            this.speed =new Vector(-180,1);
+            this.speed =new Vector(-180,moveSpeed);
 
         }
         else if((start==1)){
-            this.speed =new Vector(0,1);
+            this.speed =new Vector(0,moveSpeed);
+
+        }
+        move();
+    } public void moveY(){
+        x=getX();
+        y=getY();
+        if(y<=initY-distance)
+        {
+            start=1;
+        }
+        else if(y>=initY+distance)
+        {
+            start=0;
+        }
+        if(start==0){
+            this.speed =new Vector(-90,moveSpeed);
+
+        }
+        else if((start==1)){
+            this.speed =new Vector(90,moveSpeed);
 
         }
         move();

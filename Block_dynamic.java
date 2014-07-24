@@ -13,14 +13,14 @@ public class Block_dynamic extends Block
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public Block_dynamic(int width,int heigth,int X,int Y,int distance){
+    public Block_dynamic(int width,int heigth,int X,int Y,int distance,int speed){
         
-        super(width,heigth,X,Y,distance);
+        super(width,heigth,X,Y,distance,speed);
         init();
     }
     public void act() 
     {
         // Add your action code here.
-        moveX();
+        moveY();
     }    
 }
