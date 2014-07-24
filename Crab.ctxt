@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Crab()
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ act\ method\ provides\ the\ main\ behavior\ for\ a\ crab.\r\n
+comment2.params=
+comment2.target=void\ moveWithKeyboard()
+comment3.params=
+comment3.target=void\ Edge()
+comment4.params=
+comment4.target=void\ animation()
+numComments=5

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=width\ heigth\ initx\ inity\ d
+comment0.target=Block(int,\ int,\ int,\ int,\ int)
+comment1.params=width\ heigth
+comment1.target=Block(int,\ int)
+comment2.params=
+comment2.target=void\ init()
+comment3.params=width\ heigth\ speed
+comment3.target=Block(int,\ int,\ Vector)
+comment4.params=
+comment4.target=void\ act()
+comment5.params=
+comment5.target=void\ move()
+comment6.params=
+comment6.target=void\ moveX()
+numComments=7

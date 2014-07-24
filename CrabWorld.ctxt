@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CrabWorld()
+comment0.text=\r\n\ Create\ the\ crab\ world\ (the\ beach).\ Our\ world\ has\ a\ size\ \r\n\ of\ 560x460\ cells,\ where\ every\ cell\ is\ just\ 1\ pixel.\r\n
+comment1.params=actor
+comment1.target=void\ addObject(greenfoot.Actor)
+comment1.text=\r\n\ add\ an\ actor\ to\ the\ world\ at\ a\ random\ location.\r\n\ @param\ actor\ is\ the\ object\ to\ add\ to\ the\ world\r\n
+comment2.params=
+comment2.target=void\ init()
+numComments=3
