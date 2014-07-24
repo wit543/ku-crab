@@ -47,6 +47,16 @@ public class Block extends Environment
         setImage(image);
         
     }
+    public Block(int width,int heigth){
+        this.angle=angle;
+        GreenfootImage image = new GreenfootImage(width,heigth);
+        image.setTransparency(200);
+        image.setColor(Color.BLACK);
+        image.fillRect(0,0,width,heigth);
+        
+        setImage(image);
+        
+    }
 
     public void init(){
         //initX =getX();

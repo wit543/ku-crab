@@ -15,6 +15,9 @@ public class Block_static extends Block
     public Block_static(int width,int heigth,int angle){
         super(width,heigth,angle);
     }
+    public Block_static(int width,int heigth){
+        super(width,heigth);
+    }
     public void act() 
     {
         // Add your action code here.
